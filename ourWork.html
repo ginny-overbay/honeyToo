@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header" id="top2">
+            <div class="logo">
+                <a href="index.html"><img src="images/honey-too-logo-long.png" alt="Honey Too business logo"></a>
+            </div>
+            <div class="nav" role="navigation">
+                <ul class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ourWork.html">Our Work</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="middle">
+                <p class="script">When That Honey Do List Gets Too Long</p>
+                <p class="script2">Let the Queen Handle It</p>
+            </div>
+        </div>
+        <div class="side2">
+            <h4>Specializing In:</h4>
+            <p>Historic Renovation and Preservation<br>
+                Green Cleaning with Eco-Friendly Products<br>
+                Reusing, Upcycling, and Reclaimins
+                g Salvage Materials
+            </p>
+        </div>
+        <main class="main2" role="main">
+            <div class="main2-title">
+                <h1>What our customers have to say</h1>
+                <img src="images/pink-rec.png" alt="pink rectangle decorative" class="rectangle">
+            </div>
+            <div id="test1">
+                <h5>Outside, Inside, Whatever I Need</h5>
+                <img src="images/deck-porch.jpg" alt="deck on back of house">
+                <p class="list">Leila did a fantastic job refinishing my deck.<span class="panel"> I had wanted to spruce it up for years, but never had the time, and couldn't afford the quotes I had gotten from other local business or the big box stores. This summer I decided I couldn't wait any longer, and found Honey Too online and requested a consultation. Her work was fantastic and I can't wait to enjoy the deck for years to come! - <strong>Ginger P.</strong></span><span class="up">...</span></p>
+            </div>
+            <div id="test2">
+                <h5>Cleaning Wonder</h5>
+                <img src="images/kitchen.jpg" alt="new kitchen">
+                <p class="list">Since retiring a few years ago, I've spent most of my time puttering around the house,<span class="panel"> working on projects, and spending time with my grandkids. Cleaning, however, is not my speciality, and I kept finding that I couldn't keep up with my three-bedroom house anymore. My neighbor recommended Leila to me and it's been a godsend! She comes every two weeks and whips this place into shape. I'm so glad I found her! - <strong>Leonard B.</strong></span><span class="up">...</span></p>
+            </div>
+            <div id="test3">
+                <h5>Antique Fixer Upper</h5>
+                <img src="images/house.jpg" alt="historic Victorian style home">
+                <p class="list">I live in a old drafty home - I love antiques, but this house has its fair share of problems! <span class="panel"> Layla has come out a few times over the past two years to fix whatever new problem has come about with living in a 100-year old home. She fixed a leaky faucet, patched a hole in the wall, rehung a door, helped with the landscaping, and even brainstormed some decorative ideas for the house with me. I know if I've got an issue, Leila will be able to help. She's a marvel! - <strong>Samantha W.</strong></span><span class="up">...</span></p>
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <div>
+            <p>27 Main Street <br>
+                Asheville, NC 28805</p>
+            <a href="tel:1-828-555-1111">828-555-1111</a>
+            <p class="small">
+                <a href="#top">Back to top</a></p>
+        </div>
+        <div>
+            <ul class="footerNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ourWork.html">Our Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <a href="http://facebook.com"><img src="images/facebook-icon.png" alt="Facebook icon" class="icon"></a> <br>
+            <a href="http://instagram.com"><img src="images/Instagram_icon.png" alt="Instagram icon" class="icon"></a>
+        </div>
+        <div>
+            <p>Launched in 2011 by Leila Byerly, <strong>Honey Too</strong>&copy; is the first female-run "handy man"
+                business in the Asheville area.</p>
+            <h6><a href="contact.html">Schedule a consultation</a></h6>
+        </div>
+    </footer>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            //$(".flip").click(function() {
+            //	$(".panel").slideToggle("slow");
+            //    $(".flip").hide();
+            //    $(".up").show();
+            //});
+            $(".up").click(function() {
+                $(".panel").slideToggle("slow");
+            })
+        });
+    </script>
+</body>
+</html>

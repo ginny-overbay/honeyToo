@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header" id="top3">
+            <div class="logo">
+                <a href="index.html"><img src="images/honey-too-logo-long.png" alt="Honey Too business logo"></a>
+            </div>
+            <div class="nav" role="navigation">
+                <ul class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ourWork.html">Our Work</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="middle">
+                <p class="script">When That Honey Do List Gets Too Long</p>
+                <p class="script2">Let the Queen Handle It</p>
+            </div>
+        </div>
+        <main class="main2" role="main">
+           <div class="story">
+               Whether it's inside the walls, outside in the yard, or anything else in between, Honey Too's crew can knock out your project list.
+           </div>
+            <div>
+                <h1>What project do you need help with?</h1>
+                <img src="images/pink-rec.png" alt="decorative pink rectangle" class="rectangle">
+                <form action="here.php" method="post">
+                    <label for="name">Name:</label><input type="text" name="name" id="name" placeholder="Name"><br>
+                    <label for="phone">Telephone:</label><input type="tel" name="phone" id="phone" placeholder="Phone"><br>
+                    <label for="email">Email:</label><input type="email" name="email" id="email" placeholder="Email"><br>
+                    <label for="comments">Comments:</label><input type="text" name="comments" id="comments" placeholder="What kind of project do you have?" size="100"><br>
+                    <input type="submit" id="button">
+                </form>
+            </div>
+<div class="button1">
+    <a href="ourWork.html">Look at completed projects</a>
+</div>
+        </main>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3245.43157653545!2d-82.52980628521111!3d35.56773818022086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8859f30fb6674d3b%3A0x212325b9e392e1ad!2sMain+St%2C+Asheville%2C+NC+28803!5e0!3m2!1sen!2sus!4v1538494514285" width="500" height="200" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+       <footer class="footer">
+        <div>
+            <p>27 Main Street <br>
+                Asheville, NC 28805</p>
+            <a href="tel:1-828-555-1111">828-555-1111</a>
+             <p class="small">
+                <a href="#top">Back to top</a></p>
+        </div>
+        <div>
+            <ul class="footerNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ourWork.html">Our Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <a href="http://facebook.com"><img src="images/facebook-icon.png" alt="Facebook icon" class="icon"></a> <br>
+            <a href="http://instagram.com"><img src="images/Instagram_icon.png" alt="Instagram icon" class="icon"></a>
+        </div>
+        <div>
+            <p>Launched in 2011 by Leila Byerly, <strong>Honey Too</strong>&copy; is the first female-run "handy man"
+                business in the Asheville area.</p>
+            <h6><a href="contact.html">Schedule a consultation</a></h6>
+        </div>
+    </footer>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("input").focus(function() {
+                $(this).css("background-color", "#cccccc");
+            });
+            $("input").blur(function() {
+                $(this).css("background-color", "#ffffff");
+            });
+        });
+    </script>
+</body>
+</html>

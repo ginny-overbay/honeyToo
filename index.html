@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header" id="top">
+            <div class="logo">
+                <a href="index"><img src="images/honey-too-logo-long.png" alt="Honey Too business logo"></a>
+            </div>
+            <nav class="nav" role="navigation">
+                <ul class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ourWork.html">Our Work</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="middle">
+                <p class="script">When That Honey Do List Gets Too Long</p>
+                <p class="script2">Let the Queen <br> Handle It</p>
+            </div>
+        </header>
+        <main class="main" role="main">
+            <div class="title">
+                <h1>What We Do</h1>
+                <img src="images/pink-rec.png" alt="decorative pink bar">
+                <p class="script4"><strong>Honey Too</strong> is the first all-female "handy man" business in the Asheville area. From under the sink to drywall, landscaping to carpentry, woodworking and historic preservation, Honey Too has you covered.</p>
+                <img src="images/fence-board.jpg" alt="Hand putting sealer on fence board."><img src="images/wrench.jpg" alt="Hand tightening a bolt with a wrench."><img src="images/lawn-work.jpg" alt="Shovels digging into dirt.">
+            </div>
+            <div class="side">
+                <div class="button1">
+                    <a href="contact.html">Set up a free consultation</a>
+                </div>
+                <div class="button1">
+                    <a href="ourWork.html">Look at completed Honey Too projects</a>
+                </div>
+            </div>
+            <div class="image gallery">
+                <div class="gallery">
+                    <div class="caption-gallery">
+                        <p id="caption"></p>
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 5</div>
+                        <img src="images/slider-images-assets/cabinet.jpg" style="width:50%" alt="Restored cabinet and vintage chair.">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 5</div>
+                        <img src="images/slider-images-assets/bathroom.jpg" style="width:50%" alt="Renovated bathroom with organizational cabinets.">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 5</div>
+                        <img src="images/slider-images-assets/faucet.jpg" style="width:50%" alt="Modern faucet and sink.">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="images/slider-images-assets/gable.jpg" style="width:50%" alt="Historic home exterior with gabled roof.">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 5</div>
+                        <img src="images/slider-images-assets/exterior-yard.jpg" style="width:50%" alt="Landscaping around historic home.">
+                    </div>
+
+                    <div class="row">
+                        <div class="column">
+                            <img class="demo cursor" src="images/slider-images-assets/cabinet.jpg" style="width:100%" onclick="currentSlide(1)" alt="Small build woodworking">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/slider-images-assets/bathroom.jpg" style="width:100%" onclick="currentSlide(2)" alt="Functional storage">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/slider-images-assets/faucet.jpg" style="width:100%" onclick="currentSlide(3)" alt="Renovations and upgrades">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/slider-images-assets/gable.jpg" style="width:100%" onclick="currentSlide(4)" alt="Exterior work">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/slider-images-assets/exterior-yard.jpg" style="width:100%" onclick="currentSlide(5)" alt="Landscape design and yardwork">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <div>
+            <p>27 Main Street <br>
+                Asheville, NC 28805</p>
+            <a href="tel:1-828-555-1111">828-555-1111</a>
+            <p class="small">
+                <a href="#top">Back to top</a></p>
+        </div>
+        <div>
+            <ul class="footerNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ourWork.html">Our Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <a href="http://facebook.com"><img src="images/facebook-icon.png" alt="Facebook icon" class="icon"></a> <br>
+            <a href="http://instagram.com"><img src="images/Instagram_icon.png" alt="Instagram icon" class="icon"></a>
+        </div>
+        <div>
+            <p>Launched in 2011 by Leila Byerly, <strong>Honey Too</strong>&copy; is the first female-run "handy man"
+                business in the Asheville area.</p>
+            <h6><a href="contact.html">Schedule a consultation</a></h6>
+        </div>
+    </footer>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+        $(document).ready(function() {
+            $("#top").on('click', function(event) {
+
+                if (this.hash < 50) {
+                    event.preventDefault();
+
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
